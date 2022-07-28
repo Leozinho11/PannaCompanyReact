@@ -1,3 +1,22 @@
 *{
     background: #272727;
 }
+
+.fields{
+    float: right;
+    margin-top: 30px;
+    margin-left: 100px;
+ }
+
+ .main-text{
+    margin-top: 70px;
+    margin-right: 70%;
+    margin-left: 100px;
+    color: #0abdba;
+    text-align: top;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-text h3{
+    margin-top: 10px;
+}

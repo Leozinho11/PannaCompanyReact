@@ -1,0 +1,27 @@
+.contentboxes{
+    margin-top: 80px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    justify-content: center;
+}
+
+.item{
+    border: 5px solid #0abdba;
+    border-radius: 40px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #0abdba;
+    position: relative;
+    text-align: center;
+
+}
+
+.item img{
+    height: fit-content;
+    width: 360px;
+    display: block;
+    border-radius: 35px;
+}

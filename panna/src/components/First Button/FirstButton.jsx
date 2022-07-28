@@ -2,11 +2,11 @@ import React from "react";
 import './Button.css'
 
 
-export function firstButton( {name} ) {
+export function FirstButton( {name} ) {
 
     return(
         <div>
-            <button>{name}</button>
+            <button><span>{ name }</span></button>
         </div>
     )
 }

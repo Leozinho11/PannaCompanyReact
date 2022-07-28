@@ -11,12 +11,14 @@ button{
     cursor: pointer;
     transition: all 0.3s;
     margin-left: 96px;
+    margin-top: 10px;
 }
 
 button span{
     display: inline-block;
     position: relative;
     transition: all 0.3s;
+    background-color: transparent;
 }
 
 button span:after{
@@ -38,3 +40,4 @@ button:hover span:after{
     opacity: 1;
     right: 2;
 }
+
