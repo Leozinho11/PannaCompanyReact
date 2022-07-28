@@ -1,0 +1,45 @@
+.top-bar {
+    background-color: #9B072E;
+    margin: auto;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo {
+    height: 75px;
+    width: 170px;
+    padding: 0px 0px 0px 5px;
+    background-color: transparent;
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    color: #0abdba;
+    margin: 0px 0px 0px 70%;
+    position: absolute;
+    top: 4%;  
+    justify-content: space-around;
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li{
+    margin-right: 25px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    color: #0abdba;
+    text-decoration: none;
+}
+
+.navbar strong{
+    background-color: transparent;
+}
+
+a{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+ }

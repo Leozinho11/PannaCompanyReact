@@ -1,0 +1,19 @@
+button{
+    border-radius: 15px;
+    background-color: transparent;
+    border: solid #0abdba;
+    color: #0abdba;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+button:hover{
+    box-shadow: 0 0 40px 40px #0abdba inset;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}

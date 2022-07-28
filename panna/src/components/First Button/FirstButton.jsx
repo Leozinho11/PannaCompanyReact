@@ -1,7 +1,8 @@
 import React from "react";
 import './Button.css'
 
-export function Button( {name} ) {
+
+export function firstButton( {name} ) {
 
     return(
         <div>

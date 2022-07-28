@@ -1,0 +1,40 @@
+button{
+    border-radius: 15px;
+    background-color: #0abdba;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 96px;
+}
+
+button span{
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s;
+}
+
+button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+button:hover span{
+    padding-right: 20px;
+}
+
+button:hover span:after{
+    padding-right: 20px;
+    opacity: 1;
+    right: 2;
+}
