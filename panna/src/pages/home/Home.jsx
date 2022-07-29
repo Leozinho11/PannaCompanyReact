@@ -1,5 +1,7 @@
 import React from "react";
+import { Routes, Route, Link } from 'react-router-dom'
 import './Style.css';
+import TablesLobby from "../tables/Tables";
 import { TopBar } from '../../components/Top Bar/TopBar';
 import { FirstButton } from '../../components/First Button/FirstButton';
 import { Card } from '../../components/Cards/Cards';
@@ -12,6 +14,11 @@ import tablesPhoto from '../../images/Cards Images/trofeusCompeticoes.png';
 function Home() {
   return (
     <div className="App">
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+
       <TopBar />
       
 
@@ -26,16 +33,23 @@ function Home() {
     </div>
     <FirstButton name='VER NOTICIAS' />
 
+<div className="contentboxes">
+
     <Card image={tablesPhoto} imageDescription='cardTabela'
     text="Quer saber como andam os maiores times do mundo em suas competições ?"
-    buttonName="VER TABELAS"
+    buttonName="VER TABELAS" directedTo='../tables/Tables'
     />
 
     <Card image={matchesPhoto} imageDescription= 'cardPartidas'
     text= "Quer saber quanto está o placar das partidas que estão acontecendo ou já aconteceram ?"
     buttonName="VER PARTIDAS"
     />
-    
+
+   <Card image={transfersPhoto} imageDescription= 'cardTransferencias'
+    text= "Quer ver as principais transferências que estão acontecendo no mundo do futebol ?"
+    buttonName="VER TRANSFERÊNCIAS"
+    />
+  </div>
 
     
 

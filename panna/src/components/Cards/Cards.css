@@ -1,12 +1,3 @@
-.contentboxes{
-    margin-top: 80px;
-    gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    position: relative;
-    justify-content: center;
-}
-
 .item{
     border: 5px solid #0abdba;
     border-radius: 40px;

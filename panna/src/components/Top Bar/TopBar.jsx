@@ -1,6 +1,7 @@
 import React from "react";
 import './TopBar.css';
 import logo from '../../images/Homepage Images/logoCopa.png'
+import TablesLobby from "../../pages/tables/Tables";
 
 export function TopBar() {
     return(
