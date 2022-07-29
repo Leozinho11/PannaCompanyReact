@@ -1,7 +1,6 @@
 import React from "react";
 import './Style.css';
 import { TopBar } from '../../components/Top Bar/TopBar';
-import { Button } from '../../components/Button/Button';
 import { FirstButton } from '../../components/First Button/FirstButton';
 import { Card } from '../../components/Cards/Cards';
 import mainPhoto from '../../images/Homepage Images/quadras.png';
@@ -29,7 +28,12 @@ function Home() {
 
     <Card image={tablesPhoto} imageDescription='cardTabela'
     text="Quer saber como andam os maiores times do mundo em suas competições ?"
-    button='VER TABELAS' // NEED TO FIX THE CARDS BUTTONS
+    buttonName="VER TABELAS"
+    />
+
+    <Card image={matchesPhoto} imageDescription= 'cardPartidas'
+    text= "Quer saber quanto está o placar das partidas que estão acontecendo ou já aconteceram ?"
+    buttonName="VER PARTIDAS"
     />
     
 
