@@ -17,7 +17,9 @@ function Home() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="Tabelas" element={<TablesLobby />} />
       </Routes>
+
 
       <TopBar />
       

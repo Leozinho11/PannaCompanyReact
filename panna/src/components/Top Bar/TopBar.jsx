@@ -1,22 +1,23 @@
 import React from "react";
 import './TopBar.css';
 import logo from '../../images/Homepage Images/logoCopa.png'
-import TablesLobby from "../../pages/tables/Tables";
+import { Link } from "react-router-dom";
 
 export function TopBar() {
     return(
         <nav className="top-bar">
-            <a href="../../pages/home/Home">
+            <Link to='/'>
             <img src={logo}
              className="logo"
              alt="logo"
              />
-             </a>
+             </Link>
+             
 
             <ul className="navbar">
                 <li><a href=""><strong> Home </strong></a></li>  
                 <li><a href=""><strong> Jogos </strong></a></li>
-                <li><a href=""><strong> Tabelas </strong></a></li>
+                <li><Link to='/Tabelas'><strong> Tabelas </strong></Link></li>
 
             </ul>
         </nav>
