@@ -1,5 +1,4 @@
 import React from "react";
-import { Routes, Route, Link } from 'react-router-dom'
 import './Style.css';
 import TablesLobby from "../tables/Tables";
 import { TopBar } from '../../components/Top Bar/TopBar';
@@ -15,10 +14,7 @@ function Home() {
   return (
     <div className="App">
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="Tabelas" element={<TablesLobby />} />
-      </Routes>
+
 
 
       <TopBar />
