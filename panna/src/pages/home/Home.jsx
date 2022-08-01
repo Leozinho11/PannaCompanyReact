@@ -7,6 +7,8 @@ import mainPhoto from '../../images/Homepage Images/quadras.png';
 import transfersPhoto from '../../images/Cards Images/transferphoto.jpeg';
 import matchesPhoto from '../../images/Cards Images/classics.jpg';
 import tablesPhoto from '../../images/Cards Images/trofeusCompeticoes.png';
+import { Outlet } from "react-router-dom";
+
 
 
 function Home() {
@@ -17,6 +19,8 @@ function Home() {
 
 
       <TopBar />
+      
+
       
 
       <img className="fields" 

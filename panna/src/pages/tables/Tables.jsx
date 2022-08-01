@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from 'react-router-dom'
 import { TopBar } from "../../components/Top Bar/TopBar";
 import { Button } from "../../components/Button/Button";
 import Brasileirao from "../../images/Tables Competitions Images/brasileirao.jpg";
@@ -15,7 +16,7 @@ function TablesLobby (){
     return(
         <div className="TablesLobby">
             <TopBar />
-
+            <Outlet />
         </div>
     )
 }
