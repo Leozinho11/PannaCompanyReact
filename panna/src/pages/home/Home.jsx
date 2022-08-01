@@ -1,6 +1,5 @@
 import React from "react";
 import './Style.css';
-import TablesLobby from "../tables/Tables";
 import { TopBar } from '../../components/Top Bar/TopBar';
 import { FirstButton } from '../../components/First Button/FirstButton';
 import { Card } from '../../components/Cards/Cards';

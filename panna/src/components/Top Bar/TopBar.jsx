@@ -1,25 +1,26 @@
 import React from "react";
 import './TopBar.css';
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom';
 import logo from '../../images/Homepage Images/logoCopa.png'
-import Home from "../../pages/home/Home";
-import TablesLobby from "../../pages/tables/Tables";
+
 
 export function TopBar() {
     return(
         <nav className="top-bar">
-            <Link to={Home} spy={true} smooth={true} offset={90} duration={1000} >
+            <Link to='/'>
             <img src={logo}
              className="logo"
              alt="logo"
-             />
-            </Link>
+             /></Link>
+            
              
 
             <ul className="navbar">
-                <li><a href=""><strong> Home </strong></a></li>  
-                <li><a href=""><strong> Jogos </strong></a></li>
-                <li><a href={TablesLobby} onClick><strong> Tabelas </strong></a></li>
+                
+                   <li><strong><Link to='/'>Home</Link></strong></li>
+                    <li><strong><Link to='tabelas'>Tabelas</Link></strong></li>
+                    <li><strong><Link to=''>Jogos</Link></strong></li>
+                
 
             </ul>
         </nav>
