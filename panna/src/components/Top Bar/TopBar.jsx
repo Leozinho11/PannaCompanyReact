@@ -23,7 +23,7 @@ export function TopBar() {
             <ul className="navbar">
                 
                    <li><strong><Link to='/'>Home</Link></strong></li> 
-                    <li><strong><Link to='tabelas' replace>Tabelas</Link></strong></li> 
+                    <li><strong><Link to='tabelas'>Tabelas</Link></strong></li> 
                     <li><strong><Link to=''>Jogos</Link></strong></li> 
                 
 
