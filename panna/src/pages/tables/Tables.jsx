@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from 'react-router-dom'
-import { TopBar } from "../../components/Top Bar/TopBar";
+import TopBar from "../../components/Top Bar/TopBar";
 import { Button } from "../../components/Button/Button";
 import Brasileirao from "../../images/Tables Competitions Images/brasileirao.jpg";
 import Bundesliga from "../../images/Tables Competitions Images/bundesliga.png";
@@ -11,9 +11,10 @@ import SerieAItalia from "../../images/Tables Competitions Images/serieaitalia.j
 import Libertadores from "../../images/Tables Competitions Images/libertadores_logo.jpg";
 import Champions from "../../images/Tables Competitions Images/championsimg.jpg";
 
-function TablesLobby (){
+function Tables (){
     
     return(
+
         <div className="TablesLobby">
             <TopBar />
             <Outlet />
@@ -21,4 +22,4 @@ function TablesLobby (){
     )
 }
 
-export default TablesLobby
+export default Tables

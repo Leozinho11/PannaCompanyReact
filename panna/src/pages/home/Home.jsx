@@ -1,6 +1,6 @@
 import React from "react";
 import './Style.css';
-import { TopBar } from '../../components/Top Bar/TopBar';
+import TopBar from "../../components/Top Bar/TopBar";
 import { FirstButton } from '../../components/First Button/FirstButton';
 import { Card } from '../../components/Cards/Cards';
 import mainPhoto from '../../images/Homepage Images/quadras.png';
