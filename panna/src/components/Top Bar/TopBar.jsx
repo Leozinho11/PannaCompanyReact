@@ -4,7 +4,7 @@ import { Link, Outlet, } from 'react-router-dom';
 import logo from '../../images/Homepage Images/logoCopa.png'
 
 
-export function TopBar() {
+function TopBar() {
 
 
 
@@ -38,3 +38,5 @@ export function TopBar() {
         
     )
 }
+
+export default TopBar
