@@ -18,6 +18,20 @@ function Tables (){
         <div className="TablesLobby">
             <TopBar />
             <Outlet />
+
+            <div class="tbmenutxt"><h1>CONFIRA AQUI AS TABELAS DAS <br /> MAIORES COMPETIÇÕES DO MUNDO:</h1></div>
+
+            <div className="tbSelector">
+
+            <div className="item">
+                <img src={SerieAItalia} alt='SerieAItalia' />
+                <button>
+                    <h1>Campeonato Italiano</h1>
+                </button>
+            </div>
+
+            </div>
+
         </div>
     )
 }

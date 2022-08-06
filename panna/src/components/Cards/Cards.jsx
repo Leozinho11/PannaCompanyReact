@@ -1,20 +1,16 @@
 import React from "react";
 import './Cards.css';
+import { Link, Outlet, } from 'react-router-dom'
 
 
-export function Card({text, image, imageDescription, buttonName, directedTo}){
+export function Card({text, image, imageDescription, buttonName, directTo}){
 
-    function handleChangePage() {
-        
-    }
 
     return(
         <div className="item">
          <img src={image} alt= {imageDescription} />
-           <h3>{text}</h3> <br /> 
-           <a href={directedTo}>
-           <button onClick={handleChangePage}>{buttonName}</button>
-           </a>
+           <h3>{text}</h3> <br />
+           <button type="Button">{buttonName}</button> 
         </div>
     )
 }
