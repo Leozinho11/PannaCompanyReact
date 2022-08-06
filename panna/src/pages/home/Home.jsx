@@ -7,7 +7,6 @@ import mainPhoto from '../../images/Homepage Images/quadras.png';
 import transfersPhoto from '../../images/Cards Images/transferphoto.jpeg';
 import matchesPhoto from '../../images/Cards Images/classics.jpg';
 import tablesPhoto from '../../images/Cards Images/trofeusCompeticoes.png';
-import { Outlet } from "react-router-dom";
 
 
 
@@ -38,7 +37,7 @@ function Home() {
 
     <Card image={tablesPhoto} imageDescription='cardTabela'
     text="Quer saber como andam os maiores times do mundo em suas competições ?"
-    buttonName="VER TABELAS" directedTo='../tables/Tables'
+    buttonName="VER TABELAS" directTo='tabelas'
     />
 
     <Card image={matchesPhoto} imageDescription= 'cardPartidas'
