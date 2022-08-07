@@ -42,7 +42,7 @@ function Home() {
 
     <Card image={matchesPhoto} imageDescription= 'cardPartidas'
     text= "Quer saber quanto está o placar das partidas que estão acontecendo ou já aconteceram ?"
-    buttonName="VER PARTIDAS"
+    buttonName="VER PARTIDAS" directedTo="partidas"
     />
 
    <Card image={transfersPhoto} imageDescription= 'cardTransferencias'
