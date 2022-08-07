@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Tables from './pages/tables/Tables';
+import Matches from './pages/matches/Matches'; 
 import reportWebVitals from './reportWebVitals';
-import './style/global.css'
+import './style/global.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Home />}>
+      <Route path='/' element={<Home />} />
         <Route path='tabelas' element={<Tables />} />
-      </Route>
+        <Route path='partidas' element={<Matches />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

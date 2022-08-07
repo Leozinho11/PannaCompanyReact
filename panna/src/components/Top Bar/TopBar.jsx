@@ -22,16 +22,15 @@ function TopBar() {
 
             <ul className="navbar">
                 
-                   <li><strong><Link to='/'>Home</Link></strong></li> 
-                    <li><strong><Link to='tabelas'>Tabelas</Link></strong></li> 
-                    <li><strong><Link to=''>Jogos</Link></strong></li> 
+                   <li><strong><Link to='/'>Home</Link></strong></li> <Outlet />
+                    <li><strong><Link to='/tabelas'>Tabelas</Link></strong></li> <Outlet />
+                    <li><strong><Link to='/partidas'>Partidas</Link></strong></li> <Outlet />
                 
 
             </ul>
             
         </nav>
 
-        <Outlet />
 
         </div>
 
