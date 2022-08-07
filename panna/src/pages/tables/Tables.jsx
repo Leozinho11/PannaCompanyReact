@@ -19,8 +19,6 @@ function Tables (){
         <div className="TablesLobby">
             <TopBar />
             <Outlet />
-<<<<<<< Updated upstream
-=======
 
             <div class="tbmenutxt"><h1>CONFIRA AQUI AS TABELAS DAS <br /> MAIORES COMPETIÇÕES DO MUNDO:</h1></div>
 
@@ -68,7 +66,6 @@ function Tables (){
 
             </div>
 
->>>>>>> Stashed changes
         </div>
     )
 }
