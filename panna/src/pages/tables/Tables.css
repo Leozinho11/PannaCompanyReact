@@ -1,0 +1,63 @@
+<<<<<<< Updated upstream
+=======
+body{
+   margin-bottom: 50px;
+}
+
+.TablesLobby{
+   display: flex;
+   flex-direction: column;
+}
+
+.tbmenutxt{
+   margin-top: 30px;
+   margin-bottom: 30px;
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+   text-align: center;
+}
+ 
+ .tbSelector{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 35px;
+    justify-content: center;
+    border: none;
+ }
+
+ .item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+ }
+
+ .item img{
+    height: 250px;
+    width: 500px;
+    align-content: center;
+    position: relative;
+    border-radius: 35px;
+ }
+
+ .item button{
+   margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    background-color: transparent;
+    border: solid #0abdba;
+    color: #0abdba;
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+ }
+
+ .item button:hover{
+    box-shadow: 0 0 40px 40px #0abdba inset;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+ }
+>>>>>>> Stashed changes
