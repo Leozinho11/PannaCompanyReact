@@ -9,7 +9,7 @@ button{
     padding: 15px;
     width: 200px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.1s;
     margin-left: 96px;
     margin-top: 10px;
 }
@@ -17,7 +17,7 @@ button{
 button span{
     display: inline-block;
     position: relative;
-    transition: all 0.3s;
+    transition: all 0.1s;
     background-color: transparent;
 }
 
@@ -27,7 +27,7 @@ button span:after{
     opacity: 0;
     top: 0;
     right: -15px;
-    transition: all 0.3s;
+    transition: all 0.1s;
     cursor: pointer;
 }
 
