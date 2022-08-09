@@ -28,9 +28,9 @@ function Matches () {
 	}
 })
 
-.then(response => console.log (response))
+.then(response => response)
 
-.then(result => result)
+.then(data => console.log(data))
 
 .catch(err => {
 	console.log(err);
