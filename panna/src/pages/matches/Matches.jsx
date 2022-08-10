@@ -1,40 +1,36 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Matches.css'
 import TopBar from '../../components/Top Bar/TopBar'
 
+
 function Matches () {
 
+    const [results, setResults] = useState({fixtures: []});
 
- fetch("https://v3.football.api-sports.io/timezone", {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "v3.football.api-sports.io",
-            "x-rapidapi-key": "e13ec9776b700e46468154973ba4c968"
-        }
-    })
-    .then(response => {
-        console.log(response);
-    })
-    .catch(err => {
-        console.log(err);
-    });
-
+useEffect(() => { 
     
- fetch("https://v3.football.api-sports.io/fixtures?live=all", {
+    async function fetchData(){
+  const response = await fetch("https://v3.football.api-sports.io/fixtures?live=all", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "v3.football.api-sports.io",
 		"x-rapidapi-key": "e13ec9776b700e46468154973ba4c968"
 	}
 })
+  const data = await response.json();
+     setResults({
+        fixtures: data.response
+     })
 
-.then(response => console.log (response))
 
-.then(result => result)
 
-.catch(err => {
-	console.log(err);
-});
+}
+
+fetchData();
+
+},[])
+    
+
 
 
 
@@ -44,22 +40,7 @@ function Matches () {
     return(
         <div className="Matches">
             <TopBar />
-
-    <div className="fixtures"
-     data-host="v3.football.api-sports.io"
-     data-date=""
-     data-league=""
-     data-season=""
-     data-theme=""
-     data-refresh="15"
-     data-show-toolbar="true"
-     data-show-errors="false"
-     data-show-logos="true"
-     data-modal-game="true"
-     data-modal-standings="true"
-     data-modal-show-logos="true">
-</div>
-
+            {results.map(result => <div>{result.response}</div> )}
 
         </div>
     )
