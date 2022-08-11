@@ -7,41 +7,29 @@ function Matches () {
 
     const [results, setResults] = useState({fixtures: []});
 
-useEffect(() => { 
+    fetch("https://v3.football.api-sports.io/fixtures?live=all", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "v3.football.api-sports.io",
+            "x-rapidapi-key": "e13ec9776b700e46468154973ba4c968"
+        }
+    })
+    .then(response => response.json())
+    .then(result => console.log (result))
+
+    .catch(err => {
+        console.log(err);
+    });
+
     
-    async function fetchData(){
-  const response = await fetch("https://v3.football.api-sports.io/fixtures?live=all", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "v3.football.api-sports.io",
-		"x-rapidapi-key": "e13ec9776b700e46468154973ba4c968"
-	}
-})
-  const data = await response.json();
-     setResults({
-        fixtures: data.response
-     })
-
-
-
-}
-
-fetchData();
-
-},[])
-    
-
-
-
-
-
 
 
     return(
         <div className="Matches">
+           
             <TopBar />
-            {results.map(result => <div>{result.response}</div> )}
 
+            
         </div>
     )
 }
