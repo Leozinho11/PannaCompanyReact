@@ -1,4 +1,4 @@
-.item{
+.card {
     border: 5px solid #0abdba;
     border-radius: 40px;
     padding-bottom: 20px;
@@ -10,19 +10,19 @@
     box-sizing: content-box;
 }
 
-.item h3{
+.card h3{
     text-align: center;
     line-break: loose;
 }
 
-.item img{
+.card img{
     height: fit-content;
     width: 360px;
     display: block;
     border-radius: 35px;
 }
 
-.item button{
+.card button{
     margin: 0;
     border-radius: 15px;
     background-color: transparent;
@@ -37,7 +37,7 @@
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
-.item button:hover{
+.card button:hover{
     box-shadow: 0 0 40px 40px #0abdba inset;
     color: white;
     font-family: 'Montserrat', sans-serif;
