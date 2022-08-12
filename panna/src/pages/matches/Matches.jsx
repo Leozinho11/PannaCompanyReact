@@ -5,8 +5,10 @@ import TopBar from '../../components/Top Bar/TopBar'
 
 function Matches () {
 
-    const [results, setResults] = useState({fixtures: []});
+    const [results, setResults] = useState([]);
 
+useEffect (() => {
+   
     fetch("https://v3.football.api-sports.io/fixtures?live=all", {
         "method": "GET",
         "headers": {
@@ -14,12 +16,16 @@ function Matches () {
             "x-rapidapi-key": "e13ec9776b700e46468154973ba4c968"
         }
     })
-    .then(response => response.json())
-    .then(result => console.log (result))
-
+    .then((response) =>  response.json())
+    .then(
+        (result) => {
+            setResults(result.response)
+        }
+    )
     .catch(err => {
         console.log(err);
     });
+}, [])
 
     
 
@@ -28,7 +34,7 @@ function Matches () {
         <div className="Matches">
            
             <TopBar />
-
+            {results}
             
         </div>
     )
