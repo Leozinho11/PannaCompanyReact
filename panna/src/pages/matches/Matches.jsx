@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
-import './Matches.css'
-import TopBar from '../../components/Top Bar/TopBar'
+import './Matches.css';
+import TopBar from '../../components/Top Bar/TopBar';
+import { Card } from '../../components/Cards/Cards'
 
 
 function Matches () {
@@ -19,7 +20,7 @@ useEffect (() => {
     .then((response) =>  response.json())
     .then(
         (result) => {
-            setResults(result.response)
+            setResults(result.response[0])
         }
     )
     .catch(err => {
@@ -34,7 +35,9 @@ useEffect (() => {
         <div className="Matches">
            
             <TopBar />
-            {results}
+            <div>
+                <strong>{results.response[0]}</strong>
+            </div>
             
         </div>
     )
