@@ -35,7 +35,7 @@ useEffect (() => {
         <div className="Matches">
            
             <TopBar />
-            <div>
+            <div className="fixtures">
                 <strong>{results.response}</strong>
             </div>
             

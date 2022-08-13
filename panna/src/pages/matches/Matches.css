@@ -1,3 +1,11 @@
 .fixtures{
-    background-color: aqua;
+    border: #272727 1px solid;
+    font-family:'Montserrat', sans-serif;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 100px;
+    margin-left: 550px;
+    background-color: #0abdba;
+    width: 600px;
 }
