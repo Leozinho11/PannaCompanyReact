@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './Tables.css';
 import { Outlet } from 'react-router-dom';
 import { Button } from "../../components/Button/Button";
@@ -26,7 +27,9 @@ function Tables (){
 
             <div className="item">
                 <img src={Brasileirao} alt='Brasileirão' />
+                <Link to="brasileirao">
                 <Button name='Brasileirão Série A' />
+                </Link>
             </div>
 
             <div className="item">

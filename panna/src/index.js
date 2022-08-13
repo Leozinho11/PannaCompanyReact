@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Tables from './pages/tables/Tables';
 import Matches from './pages/matches/Matches'; 
+import Brasileirao from './pages/tables/leagues/Brasilerao';
 import reportWebVitals from './reportWebVitals';
 import './style/global.css';
 
@@ -15,6 +16,7 @@ root.render(
       <Route path='/' element={<Home />} />
         <Route path='tabelas' element={<Tables />} />
         <Route path='partidas' element={<Matches />} />
+        <Route path='brasileirao' element={<Brasileirao />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
