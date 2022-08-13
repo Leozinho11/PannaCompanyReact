@@ -20,7 +20,7 @@ useEffect (() => {
     .then((response) =>  response.json())
     .then(
         (result) => {
-            setResults(result.response[0])
+            console.log(result.response[0])
         }
     )
     .catch(err => {
@@ -36,7 +36,7 @@ useEffect (() => {
            
             <TopBar />
             <div>
-                <strong>{results.response[0]}</strong>
+                <strong>{results.response}</strong>
             </div>
             
         </div>
