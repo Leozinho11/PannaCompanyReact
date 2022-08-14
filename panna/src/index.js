@@ -16,7 +16,7 @@ root.render(
       <Route path='/' element={<Home />} />
         <Route path='tabelas' element={<Tables />} />
         <Route path='partidas' element={<Matches />} />
-        <Route path='brasileirao' element={<Brasileirao />} />
+        <Route path='tabelas/brasileirao' element={<Brasileirao />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
