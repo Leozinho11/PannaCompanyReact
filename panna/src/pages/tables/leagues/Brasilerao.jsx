@@ -16,7 +16,7 @@ function Brasileirao() {
 	response.json()
 )
 .then(result => {
-    console.log(result)
+    console.log(result.response[0].league.standings[0])
 })
 .catch(err => {
 	console.log(err);
