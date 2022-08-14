@@ -2,7 +2,7 @@ import React from "react";
 import './Background.css';
 
 
-function Background ({teamLogo, teamLogoDescription, teamName, points, goalDifference, matchesPlayed, wins, draws, defeats}){
+function Background ({position, teamLogo, teamLogoDescription, teamName, points, goalDifference, matchesPlayed, wins, draws, defeats}){
     
     return(
         <div>
@@ -10,6 +10,7 @@ function Background ({teamLogo, teamLogoDescription, teamName, points, goalDiffe
 
 <thead>
     <tr>
+        <td><b></b></td>
         <td><b>Time</b></td>
         <td><b>Pontos</b></td>
         <td><b>SG</b></td>
@@ -23,6 +24,7 @@ function Background ({teamLogo, teamLogoDescription, teamName, points, goalDiffe
 
 <tbody>
                 <tr>
+                    <td>{position}</td>
                     <td><img src={teamLogo} alt={teamLogoDescription} /> {teamName}</td>
                     <td>{points}</td>
                     <td>{goalDifference}</td>
